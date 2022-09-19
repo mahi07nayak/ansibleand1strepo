@@ -1,5 +1,5 @@
 ---
-- host: 172.31.30.38
+- host: all
   become: yes
   tasks:
    - name: i want install webserver
