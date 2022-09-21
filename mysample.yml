@@ -10,7 +10,7 @@
 
 
 
-  - name: i want install tree
-    apt:
+  - name: i want start webserver
+    service:
       name: apache2
       state: present
