@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.11.206
+- hosts: mywebserver
   become: yes
   tasks:
   - name: execute linux directly
