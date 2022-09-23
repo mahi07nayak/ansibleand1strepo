@@ -9,3 +9,9 @@
    - name: i want to display my tasks
      debug:
        msg: "{{mydebugresult}}"
+
+   - name: install git 
+     apt: 
+       name: git
+       state: present
+     when: mydebugresult.stderr =="" 
