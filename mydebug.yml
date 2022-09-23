@@ -2,7 +2,7 @@
 - hosts: 172.31.11.206
   become: yes
   tasks:
-  - name: execute linux commands
+  - name: execute linux directly
     commands: hostname -f
     register: mylinuxcmd 
   
