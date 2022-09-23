@@ -17,7 +17,7 @@
      when: mydebugresult.stderr =="" 
 
    - name: install tree
-     apt:
+     yum:
        name: tree
        state: present
-     when: mydebugresult.stderr !=""    
+     when: mydebugresult.stderr ==""    
