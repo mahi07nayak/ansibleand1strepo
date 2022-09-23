@@ -1,16 +1,7 @@
 ---
 - hosts: mywebserver
   become: yes
-  vars:
-   myvars01: git
-   myvars02: wget
-   myvars03: tree
-   myvars04: nginx
   tasks:
-  - name: i want to display myvars04
-    debug:
-      msg: "{{myvars04}}"
-      
   - name: install java on ubuntu nodes
     apt:
       name: "{{myjavaonubuntu}}"
@@ -23,4 +14,6 @@
       name: "{{myjavaonredhat}}"
       state: present
     when: ansible_os_family =="RedHat"
+
+    
 
