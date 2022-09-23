@@ -1,12 +1,8 @@
 ---
-- hosts:
-  become:
-  vars:
-   myvars01: git
-   myvars02: wget
-   myvars03: tree
-   myvars04: nginx
+- hosts: 172.31.11.206
+  become: yes
   tasks:
-  - name: i want to display myvars04
-    debug:
-      msg: "{{myvars04}}"
+  - name: execute linux commands
+    commands: hostname -f
+    register: mylinuxcmd 
+  
