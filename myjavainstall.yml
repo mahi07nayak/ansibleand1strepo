@@ -10,7 +10,7 @@
 
 
   - name: install java on redhat nodes
-    apt:
+    yum:
       name: java-1.8.0-openjdk
       state: present
     when: ansible_os_family =="RedHat"
