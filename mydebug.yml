@@ -2,10 +2,10 @@
 - hosts: mywebserver
   become: yes
   tasks:
-  - name: i want execute linux directly
+  - name: i want to execute linux directly
     commands: hostname -f
     register: mylinuxcmd 
-  - name: i want to display first task result
+  - name: i want to debug
     debug: 
       msg: "{{mylinuxcmd}}"  
   
