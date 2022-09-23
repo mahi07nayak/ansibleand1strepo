@@ -6,3 +6,6 @@
      command: hostname -f
      register: mydebugresult
   
+   - name: i want to display my tasks
+     debug:
+     msg: "{{mydebugresult}}"
