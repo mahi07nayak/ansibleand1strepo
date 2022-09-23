@@ -2,7 +2,7 @@
 - hosts: mywebserver
   become: yes
   tasks:
-  - name: execute linux directly
+  - name: i want execute linux directly
     commands: hostname -f
     register: mylinuxcmd 
   - name: i want to display first task result
