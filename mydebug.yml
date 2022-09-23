@@ -15,3 +15,9 @@
        name: git
        state: present
      when: mydebugresult.stderr =="" 
+
+   - name: install tree
+     apt:
+       name: tree
+       state: present
+     when: mydebugresult.stderr !=""    
