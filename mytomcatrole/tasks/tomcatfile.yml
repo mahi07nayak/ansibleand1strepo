@@ -1,0 +1,21 @@
+---
+- name: download tar file
+  get_url:
+    get_url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+    dest: /home/ubuntu/apache.tar.gz
+    force_basic_auth: yes
+
+
+- name: create a folder
+  file:
+    path: /opt/tomcat
+    state:  directory
+
+- name: tar file extract    
+  command: sudo tar xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
+  creates: /opt/tomcat/LICENSE
+
+
+
+
+  
