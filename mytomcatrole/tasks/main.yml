@@ -4,7 +4,7 @@
 
 - include-tasks: mytomuser.yml
 - include-tasks: javainstall.yml
-- include-tasks: tomcatfile.yml
+- include-tasks: downloadtar.yml
 - include-tasks: permission.yml
 - include-tasks: AdminUsers.yml
 - include-tasks: starttomcat.yml
