@@ -1,5 +1,5 @@
 ---
-- name: grant ownership
+- name: grant tomcat ownership
   command: sudo chown -R tomcat:tomcat /opt/tomcat/
 
 - name: change the mode on bin folder
